@@ -1,0 +1,229 @@
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #ffffff;
+    width: 100%;
+    height: 60px;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px -1px rgba(57, 76, 96, 0.15);
+    height: 100%;
+    margin: 0;
+    font-family: Inter;
+  }
+  
+  .burger {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .dropdown {
+    position: relative;
+    width: 200px;
+    height: 40px;
+  }
+  
+  .inpu,
+  .search {
+    position: absolute;
+  }
+  
+  .inpu {
+    z-index: 2;
+    top: 2px;
+    height: 36px;
+    width: 198px;
+    border: 1px solid #dfe4e7;
+    outline: none;
+    padding-left: 34px;
+    border-radius: 4px;
+    background: transparent;
+    font-family: inherit;
+    font-size: 12px;
+  }
+  
+  .search {
+    top: 13px;
+    left: 10px;
+    z-index: 3;
+    width: 16px;
+    height: 16px;
+    pointer-events: none;
+  }
+  
+  .inpu:focus {
+    border-color: transparent;
+  }
+  
+  .menu {
+    z-index: 1;
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    transition-property: width;
+    transition-duration: 0.3s;
+  }
+  
+  .inpu:focus ~ .menu {
+    box-shadow: 0 0px 8px 0 rgba(57, 76, 96, 0.18);
+    height: 170px;
+    width: 290px;
+    padding-top: 40px;
+    border-radius: 4px;
+    background: #fff;
+  }
+  
+  .inpu:focus ~ .menu .menu-content {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.3s;
+  }
+  
+  .menu-content {
+    position: absolute;
+    width: inherit;
+    visibility: hidden;
+    opacity: 0;
+    border-top: 1px solid #dfe4e7;
+  }
+  
+  .menu button {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    padding: 12px 10px;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 13px;
+  }
+  
+  .menu button img {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .menu button:hover {
+    background: #f0f1f3;
+  }
+  
+  span {
+    white-space: nowrap;
+  }
+  
+  .menu button span:last-child {
+    opacity: 0;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .menu button:hover span:last-child {
+    opacity: 1;
+  }
+  .sp{
+    width: 200px;
+    height: 70px;
+  }
+/* tabele */
+
+table {
+  margin-top: 20px;
+  
+  width: 100%; /* Adjust width as needed */
+  font-family: Arial, sans-serif; /* Set a nice font */
+  border: black 2px;
+  border-radius: 30px;
+}
+
+th, td {
+  /* padding: 20px; Adjust padding for better spacing */
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  
+}
+
+th {
+  padding: 15px;
+  background-color: #f2f2f2;
+  position: relative; /* For hover effect */
+  border: black;
+  text-align: center;
+}
+
+th:after {
+  content: "";
+  position: absolute;
+  right: 10px; /* Adjust positioning for arrows  */
+  top: 50%;
+  transform: translateY(-50%);
+  border: 5px solid transparent;
+  border-bottom-color: #ddd; /* Sort arrow down */
+}
+
+th:hover:after {
+  border-bottom-color: #333; /* Change arrow color on hover */
+}
+
+/* Alternate row color for better readability */
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+td{
+  padding: 10px;
+  text-align: center;
+}
+h1{
+  text-align: center;
+  margin: 20px;
+  color: var(--primaryColor)
+}
+
+
+
+:root{
+  --primaryColor: hsl(94,95%,46%);
+  --hoverColor: hsl(93,75%,76%);
+  --paleGreen: hsl(96, 75%, 89%);
+  --whiteColor:hsl(8, 8%, 100%);
+  --blackColor:hsl(0, 0%, 18%);
+  --greyText: hsl(8,8%, 75%);
+  --bgColor:hsl(113, 11%, 85%);
+  --inputColor:hsl(330, 12%, 97%);
+  --inputColor:hsl(154, 14%, 90%);
+
+/* Font ang Typography*/
+
+--biggestFontSize: 2.5rem;
+--h1FontSize: 1.5rem;
+--h2FontSize: 1.25rem;
+--h3FontSize: 1rem;
+--normalFontSize: 938rem;
+--smallFontSize: 813rem;
+-smallestFontSize: 75rem;
+}
+
+/* Hide empty rows (optional, uncomment if desired) */
+/*.empty-row {
+  display: none;
+}*/
+
+
+.foot{
+  display: flex;
+  gap: 10px;
+}
+
+.anc{
+        
+        
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-left: 250px ;
+}
+#link{
+  text-decoration: none;
+  color: var(--primaryColor);
+  font-size: 22px;
+}
